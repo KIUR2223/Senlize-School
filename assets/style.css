@@ -375,8 +375,9 @@ main .home-right {
         letter-spacing: 0.2px;
     }
     .column:nth-child(even) {
-        margin: 0;
+        margin-left: -20px;
         text-align: justify;
+        justify-content: center;
     }
     .column {
         padding: 20px;
