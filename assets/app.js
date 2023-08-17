@@ -16,3 +16,11 @@ function scrollToTop() {
         behavior: 'smooth'
 });
 }
+//Preloader
+setTimeout(function() {
+    // Hide the preloader
+    document.querySelector('#preloader').style.display = 'none';
+
+    // Show the main content
+    document.getElementById('mainContent').style.display = 'block';
+  }, 3000); // Delay in milliseconds (e.g., 3000ms = 3 seconds)
