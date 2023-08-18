@@ -33,14 +33,14 @@ li {
     margin: 0 auto;
 }
 
-#preloader{
+#preloader {
     background: #000 url(./img/preloader.gif) no-repeat center center;
-    background-size:5%;
+    background-size: 5%;
     height: 100vh;
     width: 100vw;
     position: fixed;
     z-index: 999900;
-   
+
 }
 
 header {
@@ -49,7 +49,8 @@ header {
     width: 100%;
     background-color: var(--primary);
 }
-main{
+
+main {
     background-color: var(--primary);
 }
 
@@ -86,7 +87,7 @@ header .navbar-nav .nav-item .nav-btn {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.navbar-nav .nav-item .nav-link::before{
+.navbar-nav .nav-item .nav-link::before {
     content: '';
     position: absolute;
     width: 8px;
@@ -101,14 +102,16 @@ header .navbar-nav .nav-item .nav-btn {
 }
 
 .navbar-nav .nav-item .nav-link.active::before,
-.navbar-nav .nav-item .nav-link:hover::before{
+.navbar-nav .nav-item .nav-link:hover::before {
     opacity: 1;
 }
+
 .navbar-nav .nav-item .nav-link.active,
-.navbar-nav .nav-item .nav-link:hover{
+.navbar-nav .nav-item .nav-link:hover {
     color: #c79bff;
 }
-.navbar-nav .nav-item .nav-btn:hover{
+
+.navbar-nav .nav-item .nav-btn:hover {
     color: #fff;
 }
 
@@ -234,75 +237,103 @@ main .home-right {
     height: auto;
 }
 
-.card-container {
+.cards {
     display: flex;
     justify-content: space-between;
     margin-top: 150px;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.24px;
 }
 
-.card {
+.flip-card {
     width: calc(33.33% - 20px);
     height: 181px;
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.flip-card-front,
+.flip-card-back {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.24px;
+}
+
+.flip-card-front {
+    background-color: #f2f2f2;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.24px;
+}
+
+.flip-card-back {
+    background-color: #eaeaea;
+    transform: rotateY(180deg);
+    margin-right: 20px;
 }
 
 .card-1 {
-    border-radius: 8px;
     background: linear-gradient(137deg, #F1E1FD 0%, #20B3E6 100%);
-    color: #000;
-    display: inline-flex;
-    height: 181px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    color: #000;
+    ;
+
+}
+
+.card-1back {
+    background: linear-gradient(137deg, #F1E1FD 0%, #20B3E6 100%);
     text-align: center;
-    font-family: Rubik;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%;
-    padding: 0px 130px 0px 129px;
-    letter-spacing: 0.24px;
+    justify-content: center;
 }
 
 .card-2 {
-    border-radius: 8px;
     background: #D6D5FE;
-    color: #000;
-    display: inline-flex;
-    height: 181px;
-    padding: 0px 130px 0px 129px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    color: #000;
+}
+
+.card-2back {
+    background: #D6D5FE;
     text-align: center;
-    font-family: Rubik;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%;
-    letter-spacing: 0.24px;
+    justify-content: center;
 }
 
 .card-3 {
-    border-radius: 8px;
     background: linear-gradient(44deg, #F4AEFF 0%, #FFEEF8 100%);
-    color: #000;
-    display: inline-flex;
-    height: 181px;
-    padding: 0px 130px 0px 129px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    color: #000;
+}
+
+.card-3back {
+    background: linear-gradient(44deg, #F4AEFF 0%, #FFEEF8 100%);
     text-align: center;
-    font-family: Rubik;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%;
-    letter-spacing: 0.24px;
+    justify-content: center;
 }
 
 .alternating-columns {
@@ -313,7 +344,7 @@ main .home-right {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; 
+    line-height: 160%;
     letter-spacing: 0.2px;
 }
 
@@ -331,26 +362,60 @@ main .home-right {
     margin-left: 720px;
 }
 
-.container .text-muted{
-    color: var(--light)!important;
+.container .text-muted {
+    color: var(--light) !important;
 }
 
-footer>ul>li>a>i.fb:hover{
-    color: 	#1877F2;
+footer>ul>li>a>i.fb:hover {
+    color: #1877F2;
 }
-footer>ul>li>a>i.ig:hover{
-   color: #E1306C;
+
+footer>ul>li>a>i.ig:hover {
+    color: #E1306C;
 }
-footer>ul>li>a>i.yt:hover{
-    color: 	#FF0000;
+
+footer>ul>li>a>i.yt:hover {
+    color: #FF0000;
+}
+
+
+.contact {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact>h2{
+    color: var(--light);
+}
+.form-group>label{
+    color: var(--light);
+}
+#contact-form>button{
+    text-align: center;
+    background: #c79bff;
+    width: 145px;
+    height: 43px;
+    color: #fff;
+    border-radius: 8px;
+    border-color: #c79bff;
+}
+
+p.contact__message{
+    color: var(--light);
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 200px) {
+
     .navbar-nav .nav-item .nav-link.active::before,
-    .navbar-nav .nav-item .nav-link:hover::before{
-    opacity: 0;
-}
-    
+    .navbar-nav .nav-item .nav-link:hover::before {
+        opacity: 0;
+    }
+
     main .home-title {
         width: 300px;
         height: 100px;
@@ -389,22 +454,26 @@ footer>ul>li>a>i.yt:hover{
         font-size: 10px;
         line-height: 25px;
     }
-    #cards{
+
+    #cards {
         margin-top: 180px;
     }
-    .card{
+
+    .card {
         margin: 20px;
         display: flex;
         width: 313px;
         height: 181px;
     }
-    .card-container{
+
+    .card-container {
         flex-direction: column;
         margin-top: 100px;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
+
     .alternating-columns {
         justify-content: center;
         align-items: center;
@@ -414,14 +483,17 @@ footer>ul>li>a>i.yt:hover{
         font-size: 10px;
         font-style: normal;
         font-weight: 400;
-        line-height: 160%; /* 32px */
+        line-height: 160%;
+        /* 32px */
         letter-spacing: 0.2px;
     }
+
     .column:nth-child(even) {
         margin-left: -20px;
         text-align: justify;
         justify-content: center;
     }
+
     .column {
         padding: 20px;
         text-align: justify;

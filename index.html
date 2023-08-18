@@ -48,7 +48,7 @@
                             <a class="nav-link " aria-current="page" href="#program">Хөтөлбөр</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-btn nav-link " aria-current="page" href="#">Холбогдох</a>
+                            <a class="nav-btn nav-link " aria-current="page" href="./contact.html">Холбогдох</a>
                         </li>
                     </ul>
                 </div>
@@ -121,22 +121,39 @@
             </div>
         </section>
         <section id="cards">
-            <div class="container card-container">
-                <div class="card">
-                    <div class="card-body card-1">
-                        <h5 class="card-title">Lorem ipsum</h5>
-                    </div>
+            <div class="container">
+                <div class="cards">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front card-1">
+                    <h3>Lorem Ipsum</h3>
+                  </div>
+                  <div class="flip-card-back card-1back">
+                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                  </div>
                 </div>
-                <div class="card">
-                    <div class="card-body card-2">
-                        <h5 class="card-title">Lorem ipsum</h5>
-                    </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front card-2">
+                    <h3>Lorem Ipsum</h3>
+                  </div>
+                  <div class="flip-card-back card-2back">
+                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                  </div>
                 </div>
-                <div class="card">
-                    <div class="card-body card-3">
-                        <h5 class="card-title">Lorem ipsum</h5>
-                    </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front card-3">
+                    <h3>Lorem Ipsum</h3>
+                  </div>
+                  <div class="flip-card-back card-3back">
+                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                  </div>
                 </div>
+              </div>
+            </div>
             </div>
         </section>
         <!--Program end-->
@@ -170,6 +187,33 @@
             </div>
         </section>
         <!--Text content end-->
+
+        <section id="contact">
+            <div class="container">
+            <div class="contact mt-5">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="user_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="user_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="user_message" rows="4" required></textarea>
+                    </div>
+
+                    <p class="contact__message" id="contact-message"></p>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            </div>
+        </section>
+
         <!--footer-->
 
             <div class="container">
@@ -194,7 +238,7 @@
     </main>
     <!--footer end-->
 
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!--========== SCROLL REVEAL ==========-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
