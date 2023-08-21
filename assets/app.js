@@ -6,7 +6,7 @@ const sr = ScrollReveal({
     reset: true
 });
 
-sr.reveal(`#home, #about, #program, #cards, #texts, footer`, {
+sr.reveal(`#home, #about, #program, #cards, #texts, footer, #contact`, {
     interval: 200
 })
 

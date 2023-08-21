@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 :root {
     --primary: #000;
@@ -87,7 +88,7 @@ header .navbar-nav .nav-item .nav-btn {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.navbar-nav .nav-item .nav-link::before {
+/* .navbar-nav .nav-item .nav-link::before {
     content: '';
     position: absolute;
     width: 8px;
@@ -104,7 +105,7 @@ header .navbar-nav .nav-item .nav-btn {
 .navbar-nav .nav-item .nav-link.active::before,
 .navbar-nav .nav-item .nav-link:hover::before {
     opacity: 1;
-}
+}*/
 
 .navbar-nav .nav-item .nav-link.active,
 .navbar-nav .nav-item .nav-link:hover {
@@ -378,6 +379,10 @@ footer>ul>li>a>i.yt:hover {
     color: #FF0000;
 }
 
+#contact{
+    margin-bottom: 50px;
+}
+
 
 .contact {
     background-color: #000;
@@ -387,15 +392,19 @@ footer>ul>li>a>i.yt:hover {
 
 .form-group {
     margin-bottom: 20px;
+    width: 600px;
+    margin-right: 60px;
 }
 
-.contact>h2{
+.contact>h2 {
     color: var(--light);
 }
-.form-group>label{
+
+.form-group>label {
     color: var(--light);
 }
-#contact-form>button{
+
+#contact-form>button {
     text-align: center;
     background: #c79bff;
     width: 145px;
@@ -405,8 +414,19 @@ footer>ul>li>a>i.yt:hover {
     border-color: #c79bff;
 }
 
-p.contact__message{
+.google-map iframe{
+    width: 600px;
+    height: 400px;
+    margin-top: 80px;
+}
+
+p.contact__message {
     color: var(--light);
+}
+
+.contact__container{
+    justify-content: space-between;
+    display: flex;
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 200px) {
@@ -453,10 +473,12 @@ p.contact__message{
         font-weight: 100px;
         font-size: 10px;
         line-height: 25px;
+        cursor: pointer;
     }
 
     #cards {
         margin-top: 180px;
+        cursor: pointer;
     }
 
     .card {
@@ -486,6 +508,8 @@ p.contact__message{
         line-height: 160%;
         /* 32px */
         letter-spacing: 0.2px;
+        margin-left: 14px;
+        cursor: pointer;
     }
 
     .column:nth-child(even) {
@@ -499,4 +523,41 @@ p.contact__message{
         text-align: justify;
         width: 400px;
     }
+
+    .flip-card-back>h3 {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .flip-card-front>h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #contact-form>button.btn.btn-primary {
+        width: 100%;
+    }
+    .form-group{
+        width: 100%;
+    }
+    .form-group>.google-map>iframe{
+        width: 70%;
+    }
+    .contact__container{
+        display: block;
+    }
+    iframe.embed-responsive-item{
+        width: 95%;
+        height: 100%;
+        margin-left: 10px;
+    }
+    .google-map>iframe{
+        margin-top: 0px;
+    }
 }
+
