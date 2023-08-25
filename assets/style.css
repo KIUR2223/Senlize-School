@@ -69,7 +69,8 @@ header .navbar-nav .nav-item .nav-link {
     align-items: center;
 
 }
-header .navbar-nav .nav-item .nav-link>ul>li>a{
+
+header .navbar-nav .nav-item .nav-link>ul>li>a {
     text-align: center;
 }
 
@@ -387,7 +388,7 @@ footer>ul>li>a>i.yt:hover {
     color: #FF0000;
 }
 
-#contact{
+#contact {
     margin-bottom: 50px;
 }
 
@@ -422,7 +423,7 @@ footer>ul>li>a>i.yt:hover {
     border-color: #c79bff;
 }
 
-.google-map iframe{
+.google-map iframe {
     width: 600px;
     height: 400px;
     margin-top: 80px;
@@ -432,7 +433,7 @@ p.contact__message {
     color: green;
 }
 
-.contact__container{
+.contact__container {
     justify-content: space-between;
     display: flex;
 }
@@ -443,22 +444,6 @@ p.contact__message {
     .navbar-nav .nav-item .nav-link:hover::before {
         color: #fff;
     }
-
-    /* #navbarNav.navbar-collapse.show{
-        text-align: center;
-        justify-content: center;
-        display: inline-grid;
-        background: #262424;
-        border-radius: 8px;
-    }
-    #navbarNav.collapsing{
-        text-align: center;
-        justify-content: center;
-        display: inline-grid;
-        background: #262424;
-        border-radius: 8px;
-    } */
-
 
     main .home-title {
         width: 380px;
@@ -487,7 +472,7 @@ p.contact__message {
         color: var(--light);
     }
 
-    main .home-btn{
+    main .home-btn {
         margin-top: -32px;
     }
 
@@ -570,36 +555,42 @@ p.contact__message {
     #contact-form>button.btn.btn-primary {
         width: 100%;
     }
-    .form-group{
+
+    .form-group {
         width: 100%;
     }
-    .form-group>.google-map>iframe{
+
+    .form-group>.google-map>iframe {
         width: 70%;
     }
-    .contact__container{
+
+    .contact__container {
         display: block;
     }
-    iframe.embed-responsive-item{
+
+    iframe.embed-responsive-item {
         width: 95%;
         height: 100%;
         margin-left: 10px;
     }
-    .google-map>iframe{
+
+    .google-map>iframe {
         margin-top: 0px;
     }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 200px) {
-    #navbarNav.navbar-collapse.show{
+    #navbarNav.navbar-collapse.show {
         text-align: center;
         justify-content: center;
         display: inline-grid;
         background: #262424;
         border-radius: 8px;
         max-width: 700px;
-    
+
     }
-    #navbarNav.collapsing{
+
+    #navbarNav.collapsing {
         text-align: center;
         justify-content: center;
         display: inline-grid;
@@ -615,7 +606,7 @@ p.contact__message {
         color: white;
         text-align: center;
     } */
-        .navbar-nav .nav-item .nav-link {
+    .navbar-nav .nav-item .nav-link {
         text-align: center;
         align-items: center;
         display: inline-grid;
