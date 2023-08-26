@@ -58,3 +58,14 @@ document.addEventListener("DOMContentLoaded", function() {
     contactForm.reset()
   });
   
+var icon = document.getElementById("dark-icon");
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src = "./assets/img/sun.png";
+    }
+    else
+    {
+      icon.src = "./assets/img/moon.png";
+    }
+  }

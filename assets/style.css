@@ -3,9 +3,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 :root {
-    --primary: #000;
-    --light: #fff;
-    --warning: #f06804;
+    --black: #000;
+    --white: #fff;
+    --btn-color: #c79bff;
+}
+
+.dark-theme {
+    --white: #000;
+    --black: #fff;
+    --btn-color: #c79bff;
 }
 
 * {
@@ -17,7 +23,10 @@
 
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: var(--primary);
+}
+
+main {
+    background-color: var(--white);
 }
 
 a {
@@ -34,8 +43,14 @@ li {
     margin: 0 auto;
 }
 
+header #dark-icon{
+    width: 20px;
+    cursor: pointer;
+    margin: 0px;
+}
+
 #preloader {
-    background: #000 url(./img/preloader.gif) no-repeat center center;
+    background: var(--white) url(./img/preloader.gif) no-repeat center center;
     background-size: 5%;
     height: 100vh;
     width: 100vw;
@@ -51,9 +66,7 @@ header {
     text-align: center;
 }
 
-main {
-    background-color: var(--primary);
-}
+
 
 header .navbar-nav .nav-item .nav-link {
     font-family: Rubik;
@@ -62,7 +75,7 @@ header .navbar-nav .nav-item .nav-link {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    color: var(--light);
+    color: var(--black);
     margin-left: 20px;
     margin-top: 16px;
     text-align: justify;
@@ -95,28 +108,9 @@ header .navbar-nav .nav-item .nav-btn {
     border-radius: none !important;
 }
 
-.navbar button .navbar-toggler-icon {
+/* .navbar button .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-/* .navbar-nav .nav-item .nav-link::before {
-    content: '';
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    bottom: 0;
-    top: 62%;
-    left: 53.3%;
-    border-radius: 50%;
-    background-color: #c79bff;
-    opacity: 0;
-    transition: all .3 ease-out 0s;
-}
-
-.navbar-nav .nav-item .nav-link.active::before,
-.navbar-nav .nav-item .nav-link:hover::before {
-    opacity: 1;
-}*/
+} */
 
 .navbar-nav .nav-item .nav-link.active,
 .navbar-nav .nav-item .nav-link:hover {
@@ -124,7 +118,7 @@ header .navbar-nav .nav-item .nav-btn {
 }
 
 .navbar-nav .nav-item .nav-btn:hover {
-    color: #fff;
+    color: var(--white);
 }
 
 main .home-title {
@@ -138,7 +132,7 @@ main .home-title {
     line-height: 38px;
     letter-spacing: 0em;
     text-align: left;
-    color: var(--light);
+    color: var(--black);
 }
 
 span.highlight {
@@ -148,7 +142,7 @@ span.highlight {
     top: 312px;
     left: 320px;
     font-family: Rubik;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 500;
     line-height: 38px;
     letter-spacing: 0em;
@@ -168,7 +162,7 @@ main .home-p {
     line-height: 32px;
     letter-spacing: 0.01em;
     text-align: left;
-    color: var(--light);
+    color: var(--black);
 }
 
 main .home-btn {
@@ -188,7 +182,7 @@ main .home-left {
 }
 
 main .home-right {
-    margin-top: 180px;
+    margin-top: 140px;
     width: 630px;
 }
 
@@ -197,11 +191,6 @@ main .home-right {
     min-width: 200px;
     align-items: center;
     justify-content: center;
-}
-
-.image-container {
-    max-width: 100%;
-    height: auto;
 }
 
 .title-section {
@@ -231,7 +220,7 @@ main .home-right {
     line-height: 32px;
     letter-spacing: 0.01em;
     text-align: center;
-    color: var(--light);
+    color: var(--black);
 }
 
 .image-section {
@@ -349,7 +338,7 @@ main .home-right {
 .alternating-columns {
     display: flex;
     flex-direction: column;
-    color: #FFF;
+    color: var(--black);
     font-family: Rubik;
     font-size: 20px;
     font-style: normal;
@@ -373,7 +362,7 @@ main .home-right {
 }
 
 .container .text-muted {
-    color: var(--light) !important;
+    color: var(--black) !important;
 }
 
 footer>ul>li>a>i.fb:hover {
@@ -394,7 +383,7 @@ footer>ul>li>a>i.yt:hover {
 
 
 .contact {
-    background-color: #000;
+    background-color: var(--white);
     padding: 20px;
     border-radius: 5px;
 }
@@ -406,11 +395,12 @@ footer>ul>li>a>i.yt:hover {
 }
 
 .contact>h2 {
-    color: var(--light);
+    color: #c79bff;
+    text-align: center;
 }
 
 .form-group>label {
-    color: var(--light);
+    color: var(--black);
 }
 
 #contact-form>button {
@@ -442,43 +432,14 @@ p.contact__message {
 
     .navbar-nav .nav-item .nav-link.active::before,
     .navbar-nav .nav-item .nav-link:hover::before {
-        color: #fff;
-    }
-
-    main .home-title {
-        width: 380px;
-        height: 100px;
-        font-size: 20px;
-        top: 312px;
-        left: 320px;
-        font-family: Rubik;
-        font-weight: 500;
-        line-height: 38px;
-        letter-spacing: 0em;
-        color: var(--light);
-    }
-
-    main .home-p {
-        margin-top: -22px;
-        width: 370px;
-        top: 458px;
-        left: 320px;
-        font-family: Rubik;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 32px;
-        letter-spacing: 0.01em;
-        text-align: left;
-        color: var(--light);
-    }
-
-    main .home-btn {
-        margin-top: -32px;
+        color: var(--white);
     }
 
     main .home-right {
-        margin: 0 auto;
+       margin: 0
+       auto;
     }
+
 
     .description {
         max-width: 350px;
@@ -513,13 +474,12 @@ p.contact__message {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        color: #FFF;
+        color: var(--black);
         font-family: Rubik;
         font-size: 10px;
         font-style: normal;
         font-weight: 400;
         line-height: 160%;
-        /* 32px */
         letter-spacing: 0.2px;
         margin-left: 14px;
         cursor: pointer;
@@ -579,14 +539,15 @@ p.contact__message {
     }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 200px) {
+@media only screen and (max-width: 1100px) and (min-width: 200px) {
     #navbarNav.navbar-collapse.show {
         text-align: center;
         justify-content: center;
         display: inline-grid;
-        background: #262424;
+        background: #c79bff;
         border-radius: 8px;
         max-width: 700px;
+        color: var(--white);
 
     }
 
@@ -594,23 +555,67 @@ p.contact__message {
         text-align: center;
         justify-content: center;
         display: inline-grid;
-        background: #262424;
+        background: #c79bff;
         border-radius: 8px;
         max-width: 700px;
     }
 
-    /* .navbar-nav .nav-item .nav-link:hover{
-        padding:20px;
-        background-color: #000;
-        border-radius: 8px;
-        color: white;
-        text-align: center;
-    } */
     .navbar-nav .nav-item .nav-link {
         text-align: center;
         align-items: center;
         display: inline-grid;
         justify-content: center;
         padding-left: 20px;
+    }
+
+    main .home-right {
+        margin: 0 auto;
+        height: auto;
+    }
+
+    main .home-title {
+        width: 380px;
+        height: 100px;
+        font-size: 20px;
+        top: 312px;
+        left: 320px;
+        font-family: Rubik;
+        font-weight: 500;
+        line-height: 38px;
+        letter-spacing: 0em;
+    }
+
+    span.highlight{
+        font-size: 20px;
+    }
+
+    main .home-p {
+        margin-top: -22px;
+        width: 370px;
+        top: 458px;
+        left: 320px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    main .home-btn {
+        margin-top: -32px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width:200px) {
+    header #dark-icon{
+      margin-left: 110px;
+    }
+}
+@media only screen and (max-width: 1400px) and (min-width: 993px) {
+    main .home-right {
+        height: auto;
+        width: 50%;
+        margin-top: 120px;
     }
 }
