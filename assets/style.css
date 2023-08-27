@@ -50,7 +50,7 @@ header #dark-icon {
 }
 
 #preloader {
-    background: var(--white) url(./img/preloader.gif) no-repeat center center;
+    background: var(--black) url(./img/preloader.gif) no-repeat center center;
     background-size: 5%;
     height: 100vh;
     width: 100vw;
@@ -211,8 +211,8 @@ main .home-right {
 
 .centered-image {
     display: block;
-    margin: 0 auto;
-    max-width: 50%;
+   margin-top: 50px;
+    max-width: 100%;
     height: auto;
 }
 
