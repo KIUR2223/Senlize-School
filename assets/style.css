@@ -43,7 +43,7 @@ li {
     margin: 0 auto;
 }
 
-header #dark-icon{
+header #dark-icon {
     width: 20px;
     cursor: pointer;
     margin: 0px;
@@ -435,10 +435,10 @@ p.contact__message {
 
 
 
-    header #dark-icon{
+    header #dark-icon {
         margin-left: 110px;
         margin-bottom: 10px;
-      }
+    }
 
     main .home-right {
         margin: 0 auto;
@@ -455,7 +455,7 @@ p.contact__message {
         letter-spacing: 0em;
     }
 
-    span.highlight{
+    span.highlight {
         font-size: 20px;
     }
 
@@ -481,7 +481,7 @@ p.contact__message {
     }
 
     main .home-right {
-       margin: 0 auto;
+        margin: 0 auto;
     }
 
 
@@ -578,6 +578,7 @@ p.contact__message {
         margin-top: 0px;
     }
 }
+
 @media only screen and (max-width: 1400px) and (min-width: 993px) {
     main .home-right {
         height: auto;
@@ -587,10 +588,11 @@ p.contact__message {
 }
 
 @media only screen and (max-width: 400px) and (min-width:200px) {
-    main .home-title{
+    main .home-title {
         font-size: 16px;
     }
-    .description{
+
+    .description {
         font-size: 12px;
 
     }
