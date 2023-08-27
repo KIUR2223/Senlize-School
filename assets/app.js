@@ -54,7 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 var icon = document.getElementById("dark-icon");
+var img = document.getElementById("navbar-toggler-icon");
   icon.onclick = function(){
+    img.src = './assets/img/icons.png';
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
       icon.src = "./assets/img/sun.png";
@@ -63,4 +65,4 @@ var icon = document.getElementById("dark-icon");
     {
       icon.src = "./assets/img/moon.png";
     }
-  }
+}

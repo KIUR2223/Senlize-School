@@ -106,7 +106,9 @@ header .navbar-nav .nav-item .nav-btn {
 .navbar-nav .nav-item .nav-btn:hover {
     color: var(--white);
 }
-
+/* .navbar-toggler-icon{
+    background-image: url(./img/menu.png) !important;
+} */
 main .home-title {
     top: 312px;
     left: 320px;
@@ -564,6 +566,11 @@ p.contact__message {
     .contact__container {
         display: block;
     }
+
+    a.btn.text-muted{
+        margin-top: 10px;
+        margin-right: -14px;
+    }
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 993px) {
@@ -582,5 +589,11 @@ p.contact__message {
     .description {
         font-size: 12px;
 
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .navbar-toggler-icon{
+        background-image: url(./img/menu.png) !important;
     }
 }
