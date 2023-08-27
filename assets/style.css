@@ -390,11 +390,6 @@ footer>ul>li>a>i.yt:hover {
     border-color: #c79bff;
 }
 
-.google-map iframe {
-    height: 400px;
-    margin-top: 80px;
-}
-
 p.contact__message {
     color: green;
 }
@@ -568,14 +563,6 @@ p.contact__message {
 
     .contact__container {
         display: block;
-    }
-
-    iframe.embed-responsive-item {
-        margin-left: 10px;
-    }
-
-    .google-map>iframe {
-        margin-top: 0px;
     }
 }
 
