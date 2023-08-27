@@ -66,8 +66,6 @@ header {
     text-align: center;
 }
 
-
-
 header .navbar-nav .nav-item .nav-link {
     font-family: Rubik;
     font-size: 16px;
@@ -100,18 +98,6 @@ header .navbar-nav .nav-item .nav-btn {
     margin-left: 43px;
 }
 
-.navbar-toggler {
-    outline: none !important;
-    border: none !important;
-    color: var(--warning) !important;
-    box-shadow: none !important;
-    border-radius: none !important;
-}
-
-/* .navbar button .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-} */
-
 .navbar-nav .nav-item .nav-link.active,
 .navbar-nav .nav-item .nav-link:hover {
     color: #c79bff;
@@ -122,8 +108,6 @@ header .navbar-nav .nav-item .nav-btn {
 }
 
 main .home-title {
-    width: 522px;
-    height: 114px;
     top: 312px;
     left: 320px;
     font-family: Rubik;
@@ -152,8 +136,6 @@ span.highlight {
 
 main .home-p {
     margin-top: 32px;
-    width: 458px;
-    height: 96px;
     top: 458px;
     left: 320px;
     font-family: Rubik;
@@ -210,8 +192,6 @@ main .home-right {
 
 .description {
     margin: 0 auto;
-    width: 847px;
-    height: 128px;
     top: 1052px;
     left: 537px;
     font-family: Rubik;
@@ -232,7 +212,7 @@ main .home-right {
 .centered-image {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -351,14 +331,11 @@ main .home-right {
     margin-top: 30px;
     padding: 20px;
     text-align: left;
-    width: 600px;
     margin-left: -20px;
 }
 
 .column:nth-child(even) {
     text-align: justify;
-    justify-content: end;
-    margin-left: 720px;
 }
 
 .container .text-muted {
@@ -414,7 +391,6 @@ footer>ul>li>a>i.yt:hover {
 }
 
 .google-map iframe {
-    width: 600px;
     height: 400px;
     margin-top: 80px;
 }
@@ -428,7 +404,76 @@ p.contact__message {
     display: flex;
 }
 
-@media only screen and (max-width: 1400px) and (min-width: 200px) {
+@media only screen and (max-width: 1100px) and (min-width: 200px) {
+    #navbarNav.navbar-collapse.show {
+        text-align: center;
+        justify-content: center;
+        display: inline-grid;
+        background: #FAE8E8;
+        border-radius: 8px;
+        max-width: 700px;
+        color: #303030;
+    }
+
+    #navbarNav.collapsing {
+        text-align: center;
+        justify-content: center;
+        display: inline-grid;
+        background: #FAE8E8;
+        border-radius: 8px;
+        max-width: 700px;
+        color: #303030;
+    }
+
+    header .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        align-items: center;
+        display: inline-grid;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+
+
+    header #dark-icon{
+        margin-left: 110px;
+        margin-bottom: 10px;
+      }
+
+    main .home-right {
+        margin: 0 auto;
+        height: auto;
+    }
+
+    main .home-title {
+        font-size: 20px;
+        top: 312px;
+        left: 320px;
+        font-family: Rubik;
+        font-weight: 500;
+        line-height: 38px;
+        letter-spacing: 0em;
+    }
+
+    span.highlight{
+        font-size: 20px;
+    }
+
+    main .home-p {
+        margin-top: 10px;
+        top: 458px;
+        left: 320px;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    main .home-btn {
+        margin-top: -32px;
+    }
 
     .navbar-nav .nav-item .nav-link.active::before,
     .navbar-nav .nav-item .nav-link:hover::before {
@@ -436,14 +481,11 @@ p.contact__message {
     }
 
     main .home-right {
-       margin: 0
-       auto;
+       margin: 0 auto;
     }
 
 
     .description {
-        max-width: 350px;
-        max-height: 300px;
         font-weight: 100px;
         font-size: 10px;
         line-height: 25px;
@@ -460,6 +502,7 @@ p.contact__message {
         display: flex;
         width: 313px;
         height: 181px;
+        font-size: 16px;
     }
 
     .card-container {
@@ -494,7 +537,6 @@ p.contact__message {
     .column {
         padding: 20px;
         text-align: justify;
-        width: 400px;
     }
 
     .flip-card-back>h3 {
@@ -529,8 +571,6 @@ p.contact__message {
     }
 
     iframe.embed-responsive-item {
-        width: 95%;
-        height: 100%;
         margin-left: 10px;
     }
 
@@ -538,84 +578,20 @@ p.contact__message {
         margin-top: 0px;
     }
 }
-
-@media only screen and (max-width: 1100px) and (min-width: 200px) {
-    #navbarNav.navbar-collapse.show {
-        text-align: center;
-        justify-content: center;
-        display: inline-grid;
-        background: #c79bff;
-        border-radius: 8px;
-        max-width: 700px;
-        color: var(--white);
-
-    }
-
-    #navbarNav.collapsing {
-        text-align: center;
-        justify-content: center;
-        display: inline-grid;
-        background: #c79bff;
-        border-radius: 8px;
-        max-width: 700px;
-    }
-
-    .navbar-nav .nav-item .nav-link {
-        text-align: center;
-        align-items: center;
-        display: inline-grid;
-        justify-content: center;
-        padding-left: 20px;
-    }
-
-    main .home-right {
-        margin: 0 auto;
-        height: auto;
-    }
-
-    main .home-title {
-        width: 380px;
-        height: 100px;
-        font-size: 20px;
-        top: 312px;
-        left: 320px;
-        font-family: Rubik;
-        font-weight: 500;
-        line-height: 38px;
-        letter-spacing: 0em;
-    }
-
-    span.highlight{
-        font-size: 20px;
-    }
-
-    main .home-p {
-        margin-top: -22px;
-        width: 370px;
-        top: 458px;
-        left: 320px;
-        font-family: Rubik;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 32px;
-        letter-spacing: 0.01em;
-        text-align: left;
-    }
-
-    main .home-btn {
-        margin-top: -32px;
-    }
-}
-
-@media only screen and (max-width: 991px) and (min-width:200px) {
-    header #dark-icon{
-      margin-left: 110px;
-    }
-}
 @media only screen and (max-width: 1400px) and (min-width: 993px) {
     main .home-right {
         height: auto;
         width: 50%;
         margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 400px) and (min-width:200px) {
+    main .home-title{
+        font-size: 16px;
+    }
+    .description{
+        font-size: 12px;
+
     }
 }
