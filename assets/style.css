@@ -566,6 +566,20 @@ p.contact__message {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .footer-ul{
+        margin: 0px;
+    }
+    .btt-btn{
+        justify-content: flex-end !important;
+        display: flex !important;
+    }
+    .btt-btn>i{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+}
+
 @media only screen and (max-width: 991px){
     .navbar-toggler-icon{
         background-image: url(./img/menu.png) !important;
